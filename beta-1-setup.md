@@ -1192,14 +1192,14 @@ file. If you do not have the ability to manipulate DNS in your environment, or
 just want a quick and dirty way to set up DNS, you can install dnsmasq on your
 master:
 
-    yum -y install dnsmasq
+    sudo yum -y install dnsmasq
 
 Replace `/etc/dnsmasq.conf` with the one from this repository, and replace
 `/etc/hosts` with the `hosts` file from this repository.
 
 Enable and start the dnsmasq service:
 
-    systemctl enable dnsmasq; systemctl start dnsmasq
+    sudo systemctl enable dnsmasq; systemctl start dnsmasq
 
 You will need to ensure the following, or fix the following:
 
